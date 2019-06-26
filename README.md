@@ -10,11 +10,11 @@
 
 ### Cloud SQL
 -----
-<strong>「proxyを使用してローカルから接続する手順」</strong>
-[https://cloud.google.com/sql/docs/mysql/quickstart-proxy-test?hl=ja](https://cloud.google.com/sql/docs/mysql/quickstart-proxy-test?hl=ja)
-[https://cloud.google.com/sql/docs/mysql/connect-external-app?hl=ja#go](https://cloud.google.com/sql/docs/mysql/connect-external-app?hl=ja#go)
-1.gcloudコマンドラインツールのインストールと認証
-2.ローカルマシンにCloudSProxyクライアントをインストールする
+<strong>「proxyを使用してローカルから接続する手順」</strong><br><br>
+[https://cloud.google.com/sql/docs/mysql/quickstart-proxy-test?hl=ja](https://cloud.google.com/sql/docs/mysql/quickstart-proxy-test?hl=ja)<br>
+[https://cloud.google.com/sql/docs/mysql/connect-external-app?hl=ja#go](https://cloud.google.com/sql/docs/mysql/connect-external-app?hl=ja#go)<br><br>
+1.gcloudコマンドラインツールのインストールと認証<br>
+2.ローカルマシンにCloudSProxyクライアントをインストールする<br><br>
 
 	wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
 
@@ -126,9 +126,16 @@
 	git commit -m "fix: 修正"
 	git push origin HEAD
 	
-<strong>上記短縮コマンド</strong>
+<strong>上記短縮シェル</strong>
 
-	/Applications/tool/lazyGitPush.sh "コメント" backend-ys
+	cd /Users/y_sato/go/src/[Project Name]
+	git add .
+	git commit -m $1
+	git push origin $2
+	
+<strong>上記シェルコマンド</strong>
+
+	/Applications/tool/lazyGitPush.sh "コメント" [Branch Name]
 	
 
 
